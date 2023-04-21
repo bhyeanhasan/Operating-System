@@ -9,6 +9,7 @@ sudo apt install build-essential
 gcc --version
 ```
 ### If gcc is not installed run below
+
 ```
 sudo apt install gcc
 ```
