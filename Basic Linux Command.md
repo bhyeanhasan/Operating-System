@@ -26,9 +26,14 @@ mkdir NewFolder
 touch helloworld.c
 ```
 
-#### Viw a file content
+#### View a file content without editing
 ```
 cat helloworld.c
+```
+
+#### Edit a file (ctrl+o for save , ctrl+x for exit the file)
+```
+nano helloworld.c
 ```
 
 #### Write in a file
