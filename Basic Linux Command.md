@@ -6,8 +6,6 @@
 gsettings set org.gnome.desktop.background picture-uri file:///home/noyon/Desktop/wallpaper.jpg
 ```
 
-
-
 ## Basic Command
 
 #### Directory related
@@ -21,74 +19,27 @@ goto home directory         $ cd
 ```
 
 
-#### Copy file or folder
+#### File Related
 ```
-cp hello.c /home/noyon/Desktop/newfolder
-```
-
-#### Move file or folder
-```
-mv hello.c /home/noyon/Desktop/newfolder
-```
-
-#### Delete file 
-```
-rm newfolder
+Make a folder               $ mkdir NewFolder
+Create a file               $ touch helloworld.c
+Copy file/folder            $ cp hello.c /home/noyon/Desktop/newfolder
+Move file/folder            $ mv hello.c /home/noyon/Desktop/newfolder
+Delete file/folder          $ rm file_name
+Rename a file/folder        $ mv old_name new_name
+View/Edit file content      $ nano helloworld.c
+                              (ctrl+o for save , ctrl+x for exit the file)
 ```
 
-#### Make a folder
+#### Query Related
 ```
-mkdir NewFolder
-```
-
-#### Create a file
-```
-touch helloworld.c
-```
-
-#### Rename a file
-```
-mv old_name new_name
-```
-
-#### View a file content without editing
-```
-cat helloworld.c
-```
-
-#### Edit a file (ctrl+o for save , ctrl+x for exit the file)
-```
-nano helloworld.c
-```
-
-#### Write in a file
-```
-echo "It will replace old text" > hello.c
-echo "New line to be added at the end" >> hello.c
-```
-
-#### Write multiple line
-```
-$ cat << EOF > hello.c
-> It will add multiple line one by one
-> But it will replace previous text
-> EOF
-
-$ cat << EOF >> hello.c
-> It will add multiple line one by one
-> Lines will adedd at the end of the file
-> EOF
-
-$ nano hello.c
+Find a file                 $ find /home -name notes.txt
+Search in a file            $ grep "Hello" helloworld.c
+Show first 10 lines         $ head filename.txt
+Show last 10 lines          $ tail filename.txt
+All the running processes   $ top
+History                     $ history
 ```
 
 
-#### Search in text
-```
-grep "Hello" helloworld.c
-```
 
-#### unzip a file
-```
-unzip new.zip
-```
