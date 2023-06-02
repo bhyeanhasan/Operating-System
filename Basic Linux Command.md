@@ -1,5 +1,14 @@
 
+## Previous year question
 
+#### Change desktop wallpaper
+```
+gsettings set org.gnome.desktop.background picture-uri file:///home/noyon/Desktop/wallpaper.jpg
+```
+
+
+
+## Basic Command
 #### Copy file or folder
 ```
 cp hello.c /home/noyon/Desktop/newfolder
