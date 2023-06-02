@@ -2,12 +2,12 @@
 
 #### Copy file or folder
 ```
-cp hello.c newfolder
+cp hello.c /home/noyon/Desktop/newfolder
 ```
 
 #### Move file or folder
 ```
-mv hello.c newfolder
+mv hello.c /home/noyon/Desktop/newfolder
 ```
 
 #### Delete file 
