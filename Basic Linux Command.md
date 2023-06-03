@@ -43,10 +43,10 @@ pc Uptime                   $ uptime
 runing OS info              $ uname -a
 
 ```
-#### command related help 
+#### Command related help 
 
 
-##### if you want to know what a command exactly do
+##### If you want to know what a command exactly do
 ```
 $ man command_name
 
@@ -55,7 +55,7 @@ $ man command_name
 ```
 $ man ls
 ```
-#### approximate command search
+#### Approximate command search
 ##### i.e. if you forget the name of command to use for showing direcotry  
 ```
 $ man -k directory
@@ -72,7 +72,25 @@ $ sl
 $sudo apt install cowsay
 $ cowsay aboyob16
 ```
-
+#### Reboot & ShutDown
+##### Reboot
+```
+$ sudo reboot
+or
+$ sudo shutdown -r now 
+```
+Note: 2nd command will perform a system shutdown in a proper way and then reboot the computer.
+##### ShutDown
+```
+$ sudo poweroff
+or
+$ sudo shutdown -h now 
+```
+This will perform a system shutdown in a proper way. You can also specify a timer (in seconds), instead of the word "now", for example: 
+```
+$ shutdown -h -t 30
+```
+This will bring the computer down in 30 seconds.
 
 
 
