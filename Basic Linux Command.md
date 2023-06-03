@@ -43,7 +43,7 @@ pc Uptime                   $ uptime
 runing OS info              $ uname -a
 
 ```
-####command related help 
+#### command related help 
 
 
 ##### if you want to know what a command exactly do
@@ -51,7 +51,7 @@ runing OS info              $ uname -a
 $ man command_name
 
 ```
-#####i.e. to show details of "ls" command
+##### i.e. to show details of "ls" command
 ```
 $ man ls
 ```
