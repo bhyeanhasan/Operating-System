@@ -39,7 +39,41 @@ Show first 10 lines         $ head filename.txt
 Show last 10 lines          $ tail filename.txt
 All the running processes   $ top
 History                     $ history
+pc Uptime                   $ uptime
+runing OS info              $ uname -a
+
 ```
+####command related help 
+
+
+##### if you want to know what a command exactly do
+```
+$ man command_name
+
+```
+#####i.e. to show details of "ls" command
+```
+$ man ls
+```
+#### approximate command search
+##### i.e. if you forget the name of command to use for showing direcotry  
+```
+$ man -k directory
+or
+$ apropos directory
+```
+##### this will list all commands related to directory.
+
+
+#### Fun part
+```
+$ sudo apt install sl
+$ sl
+$sudo apt install cowsay
+$ cowsay aboyob16
+```
+
+
 
 
 
