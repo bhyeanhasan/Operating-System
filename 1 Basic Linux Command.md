@@ -87,6 +87,16 @@ Set the time zone          $ timedatectl set-timezone 'Asia/Kolkata'
 Change current user's password      $ passwd
 (it's 'passwd' not password)
 to Change root password             $ sudo passwd
+```
+
+#### Network related
+```
+Find the route of an ip/host    $ traceroute pstu.ac.bd
+ICMP Ping                       $ ping pstu.ac.bd
+IP info                         $ ifconfig -a
+SSH connection                  $ ssh username@hostname
+network scan                    $ nmap ip
+```
 
 #### Fun part
 ```
@@ -96,11 +106,5 @@ $ sudo apt install cowsay
 $ cowsay aboyob16
 $ yes I Love You
 ```
-#### Network related
-```
-Find the route of an ip/host    $ traceroute pstu.ac.bd
-ICMP Ping                       $ ping pstu.ac.bd
-IP info                         $ ifconfig -a
-SSH connection                  $ ssh username@hostname
-network scan                    $ nmap ip
-```
+
+
