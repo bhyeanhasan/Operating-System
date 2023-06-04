@@ -13,6 +13,7 @@ gsettings set org.gnome.desktop.background picture-uri file:///home/noyon/Deskto
 ``` 
 Open Terminal            $ ctrl + alt + T
 Close Terminal           $ ctrl + D
+clear the terminal       $ clear
 ```
 
 #### Directory related
@@ -23,6 +24,7 @@ present working directory   $ pwd
 list directory              $ ls
 goto preivious directory    $ cd ..
 goto home directory         $ cd
+goto root directory         $ cd /
 ```
 
 
@@ -86,12 +88,15 @@ Set the time zone          $ timedatectl set-timezone 'Asia/Kolkata'
 ```
 $ sudo apt install sl
 $ sl
-$sudo apt install cowsay
+$ sudo apt install cowsay
 $ cowsay aboyob16
+$ yes I Love You
 ```
 #### Network related
 ```
 Find the route of an ip/host    $ traceroute pstu.ac.bd
 ICMP Ping                       $ ping pstu.ac.bd
 IP info                         $ ifconfig -a
+SSH connection                  $ ssh username@hostname
+network scan                    $ nmap ip
 ```
