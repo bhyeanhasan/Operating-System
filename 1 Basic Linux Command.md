@@ -8,6 +8,13 @@ gsettings set org.gnome.desktop.background picture-uri file:///home/noyon/Deskto
 
 ## Basic Command
 
+#### Ubuntu Shortcut
+
+``` 
+Open Terminal            $ ctrl + alt + T
+Close Terminal           $ ctrl + D
+```
+
 #### Directory related
 
 ``` 
