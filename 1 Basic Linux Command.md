@@ -82,7 +82,11 @@ Change time & date         $ timedatectl set-time "YYYY-MM-DD HH:MM:SS"
 Auto time sync on          $ timedatectl set-ntp 1
 Set the time zone          $ timedatectl set-timezone 'Asia/Kolkata'
 ```
-
+#### Security
+```
+Change current user's password      $ passwd
+(it's 'passwd' not password)
+to Change root password             $ sudo passwd
 
 #### Fun part
 ```
