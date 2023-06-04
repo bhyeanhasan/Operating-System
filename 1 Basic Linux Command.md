@@ -89,5 +89,9 @@ $ sl
 $sudo apt install cowsay
 $ cowsay aboyob16
 ```
-
-
+#### Network related
+```
+Find the route of an ip/host    $ traceroute pstu.ac.bd
+ICMP Ping                       $ ping pstu.ac.bd
+IP info                         $ ifconfig -a
+```
