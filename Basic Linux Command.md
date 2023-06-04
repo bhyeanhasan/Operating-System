@@ -43,7 +43,11 @@ pc Uptime                   $ uptime
 runing OS info              $ uname -a
 
 ```
+<<<<<<< HEAD
 #### Command related help 
+=======
+####command related help 
+>>>>>>> parent of ab5ca7c (Update Basic Linux Command.md)
 
 
 ##### If you want to know what a command exactly do
@@ -51,7 +55,7 @@ runing OS info              $ uname -a
 $ man command_name
 
 ```
-##### i.e. to show details of "ls" command
+#####i.e. to show details of "ls" command
 ```
 $ man ls
 ```
