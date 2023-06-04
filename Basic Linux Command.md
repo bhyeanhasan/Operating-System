@@ -43,30 +43,26 @@ pc Uptime                   $ uptime
 runing OS info              $ uname -a
 
 ```
-<<<<<<< HEAD
+
+#### Reboot & ShutDown
+```
+Reboot                      $ sudo reboot
+ShutDown                    $ sudo poweroff
+Reboot after 30 sec         $ shutdown -r -t 30
+ShutDown after 30 sec       $ shutdown -h -t 30
+```
+
+
 #### Command related help 
-=======
-####command related help 
->>>>>>> parent of ab5ca7c (Update Basic Linux Command.md)
 
+##### 
+```
+If you want to know what a command exactly do           $ man command_name
+Such as want to know what 'ls' command exactly do       $ man ls
 
-##### If you want to know what a command exactly do
+If you forget the any command                           $ man -k 'any'
+Such as forget the 'directory' command                  $ man -k directory
 ```
-$ man command_name
-
-```
-#####i.e. to show details of "ls" command
-```
-$ man ls
-```
-#### Approximate command search
-##### i.e. if you forget the name of command to use for showing direcotry  
-```
-$ man -k directory
-or
-$ apropos directory
-```
-##### this will list all commands related to directory.
 
 
 #### Fun part
@@ -76,26 +72,5 @@ $ sl
 $sudo apt install cowsay
 $ cowsay aboyob16
 ```
-#### Reboot & ShutDown
-##### Reboot
-```
-$ sudo reboot
-or
-$ sudo shutdown -r now 
-```
-Note: 2nd command will perform a system shutdown in a proper way and then reboot the computer.
-##### ShutDown
-```
-$ sudo poweroff
-or
-$ sudo shutdown -h now 
-```
-This will perform a system shutdown in a proper way. You can also specify a timer (in seconds), instead of the word "now", for example: 
-```
-$ shutdown -h -t 30
-```
-This will bring the computer down in 30 seconds.
-
-
 
 
