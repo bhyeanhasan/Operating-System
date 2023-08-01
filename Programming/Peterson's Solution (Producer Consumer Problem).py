@@ -1,9 +1,10 @@
 import threading
 
-Critical_item = 0  #critical data
+Critical_item = 0  # critical data
 Producer_wish = False
 Consumer_wish = False
 turn = 0  # 0 mane Producer 1 mane Consumer
+
 
 def producer_want_to_produce():
     global Critical_item, Producer_wish, Consumer_wish, turn
@@ -20,6 +21,7 @@ def producer_want_to_produce():
     Producer_wish = False
     print('Producer critical section use kora ses')
 
+
 def consumer_want_to_consume():
     global Critical_item, Producer_wish, Consumer_wish, turn
     Consumer_wish = True
@@ -34,6 +36,7 @@ def consumer_want_to_consume():
         print("Consumer critical section e ace")
     Consumer_wish = False
     print('Consumer critical section use kora ses')
+
 
 t1 = threading.Thread(target=producer_want_to_produce)
 t2 = threading.Thread(target=consumer_want_to_consume)
