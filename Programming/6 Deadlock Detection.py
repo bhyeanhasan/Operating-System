@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def bankers_algorithm(Allocation, Max, Available):
+def detection_algorithm(Allocation, Max, Available):
     Work = Available
     n = len(Allocation)
     Finish = [False for i in range(n)]  # প্রথমে সবগুলা প্রসেস ইনকম্পিট
@@ -30,7 +30,7 @@ def bankers_algorithm(Allocation, Max, Available):
             break
 
 
-Available = np.array([3, 3, 2])
+Available = np.array([0, 0, 0])
 Allocation = np.array([
     [0, 1, 0],
     [2, 0, 0],
@@ -46,4 +46,4 @@ Max = np.array([
     [4, 3, 3]
 ])
 
-bankers_algorithm(Allocation, Max, Available)
+detection_algorithm(Allocation, Max, Available)
