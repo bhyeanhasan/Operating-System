@@ -1,6 +1,6 @@
 import threading
 
-critical_section_available = True
+critical_section_available = True # প্রথমে ক্রিটিকাল সেকশনে কেউ নেই
 
 
 def release():
