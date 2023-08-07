@@ -79,6 +79,8 @@ print(process)
 
 plt.barh(y=process_schedule, width=[i[2] for i in process], left=[i[3] for i in process])
 plt.show()
+
+
 '''
 3
 0
