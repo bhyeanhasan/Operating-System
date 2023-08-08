@@ -28,14 +28,15 @@ def complete_process(i):
     global time, process, system_idle, process_queue, num_process
 
     for j in range(num_process):
-        if process[j][0] == i:
+        if process[j][0] == process_queue[0][0]:
             i = j
+            break
 
     if time < process[i][1]:
         system_idle += abs(time - process[i][1])
         time = process[i][1]
 
-    process_schedule.append(i)
+    process_schedule.append(process_queue[0][0])
     process[i][3] = time
     time = time + process[i][2]
     process[i][4] = time
@@ -48,6 +49,7 @@ def complete_process(i):
             process_queue.append(process[j])
 
     process_queue.sort(key=lambda x: x[2])
+    print(process_queue)
 
 
 x = 0
@@ -77,6 +79,7 @@ print("System Utilization = ", ((time - system_idle) / time) * 100)
 
 plt.barh(y=process_schedule, width=[i[2] for i in process], left=[i[3] for i in process])
 plt.show()
+
 '''
 6
 0

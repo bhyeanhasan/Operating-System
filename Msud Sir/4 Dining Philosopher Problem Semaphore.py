@@ -45,7 +45,7 @@ for i in range(4):
 # t3 = threading.Thread(target=eating, args=('ij', 3))
 # t4 = threading.Thread(target=eating, args=('ij', 4))
 # t5 = threading.Thread(target=eating, args=('ij', 0))
-
+#
 # t1.start()
 # t2.start()
 # t3.start()

@@ -7,9 +7,9 @@ def one(num, char):
 
 
 # creating thread
-t1 = threading.Thread(target=one, args=(1000, 't1'))
-t2 = threading.Thread(target=one, args=(500, 't2'))
-t3 = threading.Thread(target=one, args=(1000, 't3'))
+t1 = threading.Thread(target=one, args=(100, 't1'))
+t2 = threading.Thread(target=one, args=(50, 't2'))
+t3 = threading.Thread(target=one, args=(100, 't3'))
 
 t1.start()
 t2.start()

@@ -3,7 +3,7 @@ import threading
 Critical_item = 0  # critical data
 Producer_wish = False
 Consumer_wish = False
-turn = 0  # 0 mane Producer 1 mane Consumer
+turn = -1  # 0 mane Producer 1 mane Consumer
 
 
 def producer_want_to_produce():

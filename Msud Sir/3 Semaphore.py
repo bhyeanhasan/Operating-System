@@ -13,7 +13,7 @@ def wait():  # Buffer er vitor produce korte thake
     Semaphore -= 1
 
 
-def signal(): # Buffer theke consume korte thake
+def signal():  # Buffer theke consume korte thake
     global Semaphore, Limit
 
     while Semaphore >= Limit:
