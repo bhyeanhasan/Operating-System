@@ -18,7 +18,7 @@ for i in range(num_process):
 process.sort(key=lambda x: x[3], reverse=True)
 
 timeline = [-1 for i in range(500)]
-
+start = 0
 for i in range(num_process):
     cnt = 0
     start = process[i][1]
@@ -30,7 +30,8 @@ for i in range(num_process):
             process[i][5] = start + 1
             cnt += 1
         start += 1
-timeline = [x for x in timeline if x != -1]
+
+timeline = timeline[0:start]
 
 turnaround_time = []
 waiting_time = []

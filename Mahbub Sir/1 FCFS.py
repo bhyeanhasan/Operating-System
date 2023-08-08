@@ -47,14 +47,19 @@ print("Waiting time ", waiting_time)
 plt.barh(y=process_sequence, width=burst_time, left=time_entry)
 plt.show()
 
-# 5
-# 0
-# 0
-# 0
-# 0
-# 0
-# 2
-# 1
-# 8
-# 4
-# 5
+
+'''
+
+5
+0
+0
+0
+0
+0
+2
+1
+8
+4
+5
+
+'''
