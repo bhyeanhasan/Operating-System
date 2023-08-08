@@ -56,7 +56,6 @@ for i in range(num_process):
 '''
 5
 2
-
 0
 2
 0
@@ -67,5 +66,18 @@ for i in range(num_process):
 4
 0
 5
+
+5
+2
+0
+5
+0
+3
+0
+1
+0
+7
+0
+4
 
 '''

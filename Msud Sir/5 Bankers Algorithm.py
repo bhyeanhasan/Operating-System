@@ -17,6 +17,8 @@ def bankers_algorithm(Allocation, Max, Available):
                 print("Process ", i, ">\n")
             break
 
+        flag = True
+
         for i in range(n):
             if Finish[i] == False and all(
                     np.less_equal(Need[i], Work)):  # যদি প্রসেস ইনকমপ্লিট ও তার নিড কম বা সমান থাকে
@@ -24,8 +26,9 @@ def bankers_algorithm(Allocation, Max, Available):
                 Work = np.add(Work, Allocation[i])  # তার ব্যাবহার করা রিসোর্স রিলিজ করে দিবে
                 process_done.append(i)  # প্রসেস সেফ সিকুইয়েন্স
                 process_incomplete -= 1
+                flag = False
 
-        if len(process_done) <= 0:  # যদি একটা প্রসেস ও কমপ্লিট করা না যায় তাহলে ডেডলক
+        if flag:  # যদি একটা প্রসেস ও কমপ্লিট করা না যায় তাহলে ডেডলক
             print("Deadlock Detected")
             break
 
@@ -41,9 +44,9 @@ Allocation = np.array([
 Max = np.array([
     [7, 5, 3],
     [3, 2, 2],
-    [9, 0, 2],
-    [2, 2, 2],
-    [4, 3, 3]
+    [9, 9, 9],
+    [9, 9, 9],
+    [9, 9, 9]
 ])
 
 bankers_algorithm(Allocation, Max, Available)
