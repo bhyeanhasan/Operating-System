@@ -49,7 +49,6 @@ def complete_process(i):
             process_queue.append(process[j])
 
     process_queue.sort(key=lambda x: x[2])
-    print(process_queue)
 
 
 x = 0

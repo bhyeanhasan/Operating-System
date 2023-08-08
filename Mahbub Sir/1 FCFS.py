@@ -10,7 +10,6 @@ turnaround_time = []
 process_sequence = []
 time_entry = []
 time_exit = []
-
 time = 0
 
 print("Give arrival time in sequence: ")
@@ -46,7 +45,6 @@ print("Waiting time ", waiting_time)
 
 plt.barh(y=process_sequence, width=burst_time, left=time_entry)
 plt.show()
-
 
 '''
 
