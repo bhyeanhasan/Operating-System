@@ -22,9 +22,14 @@ time = 0.0
 process_schedule = []
 waiting_time = []
 turnaround_time = []
+system_idle = 0
 
 while True:
     for i in range(num_process):
+        if time < process[i][1]:
+            system_idle += abs(time - process[i][1])
+            time = process[i][1]
+
         if process[i][2] - process[i][5] < quantum:
             dif = process[i][2] - process[i][5]
             process[i][5] += dif
@@ -52,7 +57,6 @@ for i in range(num_process):
     waiting_time.append(turnaround_time[i] - process[i][2])
     print("Process ", process[i][0], " waiting time", waiting_time[i])
 
-
 '''
 5
 2
@@ -79,5 +83,4 @@ for i in range(num_process):
 7
 0
 4
-
 '''
